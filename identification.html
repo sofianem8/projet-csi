@@ -3,18 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <title>S'identifier</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <h1>S'identifier</h1>
     <form>
       <label for="identification">Choisissez votre identification :</label>
       <select id="identification" name="identification">
-        <option value="agent">Agent municipal</option>
         <option value="anonyme">Anonyme</option>
+        <option value="agent">Agent municipal</option>
         <option value="habitant">Habitant</option>
       </select>
-      <button type="submit">Valider</button>
+      <div id="identification-fields" class="hidden">
+        <label for="identifiant">Identifiant :</label>
+        <input type="text" id="identifiant" name="identifiant">
+        <label for="motdepasse">Mot de passe :</label>
+        <input type="password" id="motdepasse" name="motdepasse">
+      </div>
+      <button type="submit" href="form-signalement.html">Valider</button>
       <a href="inscription.html" id="inscription-button" class="hidden"><button type="button">S'inscrire</button></a>
     </form>
     

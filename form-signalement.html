@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de signalement</title>
+    <link rel="stylesheet" href="styles/style-form-signalement.css">
+</head>
+
+<body>
+    <h1>Formulaire de signalement</h1>
+    <form>
+        <label for="numDebut">Numéro de début :</label>
+        <input type="text" id="numDebut" name="numDebut" required>
+        <label for="numFin">Numéro de fin :</label>
+        <input type="text" id="numFin" name="numFin">
+
+        <label for="probleme">Problème :</label>
+        <select id="probleme" name="probleme" required>
+            <option value="autre">Autre</option>
+            <option value="eclairage">Panne éclairage public</option>
+            <option value="chaussee">Chaussée abîmée</option>
+            <option value="trottoir">Trottoir abîmé</option>
+            <option value="egout">Égout bouché</option>
+            <option value="arbre">Arbre à tailler</option>
+            <option value="voiture">Voiture ventouse</option>
+        </select>
+
+        <label for="description">Description :</label>
+        <textarea id="description" name="description"></textarea>
+
+        <label for="niveauUrgence">Niveau d'urgence :</label>
+        <select id="niveauUrgence" name="niveauUrgence" required>
+            <option value="faible">Faible</option>
+            <option value="moyen">Moyen</option>
+            <option value="urgent">Urgent</option>
+            <option value="tres-urgent">Très urgent</option>
+        </select>
+
+        <button type="submit">Envoyer le signalement</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
