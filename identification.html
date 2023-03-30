@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>S'identifier</title>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style-identification.css">
   </head>
   <body>
@@ -20,8 +22,10 @@
         <label for="motdepasse">Mot de passe :</label>
         <input type="password" id="motdepasse" name="motdepasse">
       </div>
-      <button type="submit" href="form-signalement.html">Valider</button>
-      <a href="inscription.html" id="inscription-button" class="hidden"><button type="button">S'inscrire</button></a>
+      <button type="submit" formaction="form-signalement.html">Effectuer un signalement</button>
+      <button type="submit" formaction="liste-signalements.html">Consulter la liste des signalements</button>
+      <button type="submit" id="inscription-button" class="d-none btn btn-primary" formaction="inscription.html">S'inscrire</button>
+      
     </form>
     
     <script src="script.js"></script>

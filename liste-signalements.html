@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Liste des signalements en cours</title>
+  <!-- Ajouter les liens vers les fichiers CSS de Bootstrap -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style-liste-signalements.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Liste des signalements en cours</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Afficher les signalements avec des cartes Bootstrap -->
+      <div class="col">
+        <div class="card">
+          <div class="card-header">Titre du signalement</div>
+          <div class="card-body">
+            <h5 class="card-title">Sous-titre</h5>
+            <p class="card-text">Description du signalement.</p>
+            <a href="#" class="btn btn-primary" role="button">Voir les détails</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Script JS -->
+  <script src="script.js"></script>
+</body>
+</html>
