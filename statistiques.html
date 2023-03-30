@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Statistiques</title>
+    <!-- Ajouter les liens vers les fichiers CSS de Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style-statistiques.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Statistiques</h1>
+        <form>
+            <label for="stat-dropdown">Statistiques :</label>
+            <select id="stat-dropdown" name="stat-dropdown">
+                <option value="stat-1">Stat 1</option>
+                <option value="stat-2">Stat 2</option>
+                <option value="stat-3">Stat 3</option>
+            </select>
+        </form>
+
+        <div class="stat-container" id="stat-1-container">
+            <h2>Statistique 1</h2>
+            <!-- Afficher les informations de la statistique 1 -->
+        </div>
+
+        <div class="stat-container hidden" id="stat-2-container">
+            <h2>Statistique 2</h2>
+            <!-- Afficher les informations de la statistique 2 -->
+        </div>
+
+        <div class="stat-container hidden" id="stat-3-container">
+            <h2>Statistique 3</h2>
+            <!-- Afficher les informations de la statistique 3 -->
+        </div>
+
+    </div>
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

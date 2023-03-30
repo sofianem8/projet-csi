@@ -49,3 +49,15 @@ function getSignalements() {
 // Appel de la fonction pour récupérer les signalements au chargement de la page
 getSignalements();
 
+// Masquer le bouton de statistiques par défaut
+const statistiquesButton = document.querySelector('#statistiques-button');
+
+select.addEventListener('change', () => {
+  if (select.value === 'agent') {
+    statistiquesButton.classList.remove('hidden');
+  } else {
+    statistiquesButton.classList.add('hidden');
+  }
+});
+
+
